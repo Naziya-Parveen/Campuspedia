@@ -1,0 +1,174 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<title>CAMPUSPEDIA</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="css/coda-slider.css" type="text/css" charset="utf-8" />
+
+<script src="js/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-1.3.3.js" type="text/javascript"></script>
+<script src="js/jquery.localscroll-1.2.5.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.serialScroll-1.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/coda-slider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+	
+<div id="slider">
+	<div id="tooplate_wrapper">
+        <div id="tooplate_sidebar">
+		
+            <div id="header">
+                <h1><a href="#"><img src="images/tooplate_logo.png" title="CAMPUSPEDIA"/></a></h1>
+            </div>    
+			
+            <div id="menu">
+                <ul class="navigation">
+                    <li><a href="#home" class="selected menu_01">Home</a></li>
+                    <li><a href="#login" class="menu_02">Login</a></li>
+                    <li><a href="#register" class="menu_03">Faculty Registration</a></li>
+                    <li><a href="#courses" class="menu_05">Courses</a></li>
+                </ul>
+            </div>
+		</div> <!-- end of sidebar -->  
+    
+        <div id="content">
+          <div class="scroll">
+            <div class="scrollContainer">
+              <div class="panel" id="home">
+                <div class="content_section">
+                  <h2>Welcome to Campuspedia</h2>
+                  
+                  <p>Here you get the entire information about your college. Now no need to keep record in pages and papers. Now you will get full record of courses, departments, faculties and their teaching schedule, venue of class in just one click. The details of any upcoming events, tests, quiz and daily changing venue and schedules are displayed on notice boards, and if you fail to see the noticeboard then you might face consequences. It is too exhausting to maintain these information daily. So the Campuspedia now provide you all the information online.  </p>
+                  
+                </div>
+                <div class="content_section last_section">
+                  <h2>Our Services</h2>
+                  <ul class="service_list">
+
+                    <li><a href="#" class="service_one">View updated timetable</a></li>
+                    <li><a href="#" class="service_two">View about tests and quizzes</a></li>
+                    <li><a href="#" class="service_three">See event details</a></li>
+                    <li><a href="#" class="service_four">Full view of course structure</a></li>
+ 
+                  </ul>
+                </div>
+              </div> <!-- end of home -->
+
+ 
+			  
+              <div class="panel" id="login">
+                  <h1>Login</h1>
+                  
+                   <div id="contact_form">
+                    <form method="post" name="login" action="./LoginServlet">
+                      <label for="username">username:</label>
+                      <input type="text" maxlength="40" id="username" class="input_field" name="username" />
+                      <div class="cleaner_h10"></div>
+
+                      <label for="password">Password:</label>
+                      <input type="password" maxlength="6" id="password" class="input_field" name="password" />
+                      <div class="cleaner_h10"></div>
+
+                      <div class="cleaner_h10"></div>
+                      <input type="submit" value="Login" id="submit" name="submit" class="submit_btn float_l" />
+                      <input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />
+                      
+                       <div class="cleaner_h10"></div>
+                      <a href="#" class="service_four">Forgot password?</a>
+                    </form>
+                  </div>
+                
+                </div><!-- end of login -->
+
+
+<div class="panel" id="registration">
+                  <h2>Registration</h2>
+                   <div id="contact_form">
+                    <form method="post" name="registration" action="./RegistrationServlet">
+                        
+                      <label for="employee id">Employee id:</label>
+                      
+                      <input type="text" maxlength="40" id="employee_id" class="input_field" name="employee_id" />
+                      <div class="cleaner_h10"></div>
+                      
+                      <label for="Name">Name:</label>
+
+                      <input type="text" maxlength="40" id="name" class="input_field" name="name" />
+                      <div class="cleaner_h10"></div>
+
+                      <label for="course">Course:</label>
+
+                      <input type="text" maxlength="40" id="course" class="input_field" name="course" />
+                      <div class="cleaner_h10"></div>
+
+                      <label for="subject_code">Subject code:</label>
+
+                      <input type="text" maxlength="40" id="subject_code" class="input_field" name="subject_code" />
+                      <div class="cleaner_h10"></div>
+                     
+                      <label for="email">Email:</label>
+
+                      <input type="text" maxlength="40" id="email" class="input_field" name="email" />
+                      <div class="cleaner_h10"></div>
+
+
+                      <label for="contact">Contact no:</label>
+
+                      <input type="text" maxlength="40" id="contact" class="input_field" name="contact" />
+                      <div class="cleaner_h10"></div>
+
+
+                      <label for="password">Password:</label>
+
+                      <input type="password" maxlength="6" id="course" class="input_field" name="password" />
+                      <div class="cleaner_h10"></div>
+
+
+                      <input type="submit" value="Register" id="submit" name="Send" class="submit_btn float_l" />
+                      <input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />
+                    </form>
+                  </div>
+               
+              </div> <!-- end of registration -->
+			  
+
+				
+               
+              
+  
+              <div class="panel" id="courses">
+                <h2>Courses</h2>
+               
+                    <ul class="service_list">
+
+                    <li><a href="#" class="course_one">Bachelor of Engineering(BE)</a></li>
+                    <li><a href="#" class="course_two">Bachelor of Pharmacy(BPharm)</a></li>
+                    <li><a href="#" class="course_three">Master of Engineering(ME)</a></li>
+                    <li><a href="#" class="course_four">Master of Pharmacy(MPharm)</a></li>
+     		    <li><a href="#" class="course_five">Master of Computer Application(MCA)</a></li>
+		    <li><a href="#" class="course_six">Master of Business Administration(MBA)</a></li>
+	 
+                  </ul>
+
+                <div class="cleaner_h10"></div>
+				
+              
+          </div><!-- end of scroll -->
+		</div>
+    </div> <!-- end of content -->
+</div>
+
+
+</div>
+</div>>
+</body>
+</html>
